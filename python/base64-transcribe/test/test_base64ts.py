@@ -12,4 +12,5 @@ class TestStringMethods(unittest.TestCase):
 		self.assertEqual(actual, expected)
 
 if __name__ == '__main__':
+	print(mod_base64ts.BYTE_SIZE)
 	unittest.main()
