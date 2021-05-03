@@ -17,3 +17,4 @@
 - [Python __init__.pyの書き方](https://qiita.com/FN_Programming/items/2dcabc93365a62397afe)
 - [Python 3 標準の unittest でテストを書く際のディレクトリ構成](https://qiita.com/hoto17296/items/fa0166728177e676cd36)
 - [Python自作パッケージのunittestをそれっぽいディレクトリ構成で実施する際にModuleNotFoundErrorを回避する](https://qiita.com/reinhardhq/items/838df0bf09611f3c5872)
+- [Base64に関するあれこれ（Java）](https://qiita.com/myam314/items/e852a46ea7f9bfcdb163)
