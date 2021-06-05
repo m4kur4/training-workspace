@@ -1,17 +1,17 @@
+// Reactを利用する場合、必ずreactをインポートする必要がある
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+// HTML要素にAppコンポーネントを描画する場合、react-domも必要になる
+// 今回は、Appコンポーネントを<div id="root"></dic>に描画するため、react-domも
+import ReactDom from 'react-dom';
+// Appコンポーネントをインポートする
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+// Appコンポーネントを<div id="root"></div>に描画する。
+// /src/index.jsなどがビルドされたjavascriptファイルはpublic/index.htmlで読み込まれる
+// そのため、public/index.htmlの<div id="root"></div>にAppコンポーネントが描画される
+ReactDom.render(
+	<React.StrictMode>
+		<App/>
+	</React.StrictMode>,
+	document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

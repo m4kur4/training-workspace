@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+// Reactを利用する場合、必ずreactをimportする必要がある
+import React from 'react';
 
+// Appコンポーネント
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	// JSXというjavascriptの拡張(javascriptに独自の構文を拡張したもの)を利用すれば
+	// javascriptにHTMLのような構文をかける。JSXはブラウザでは動作しないので通常のjavascriptに変換する
+	// 必要があるが、Create React Appで作成した開発環境では変換も自動で行ってくれる。
+	// そのため、こちら側では何もせずにJSXを利用できる
+	return (
+		<div>
+			<p>Hello World!</p>
+		</div>
+	);
 }
 
+// 他のjavascriptからimportして利用できるようにするため、exportする
 export default App;
